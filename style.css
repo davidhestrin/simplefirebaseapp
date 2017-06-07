@@ -1,4 +1,12 @@
-#movie_title{
-  width: 180px;
+#string{
+  width: 200px;
+  height: 40px;
+}
 
+#submit{
+  height: 40px;
+}
+
+#center{
+  margin: 50%;
 }
