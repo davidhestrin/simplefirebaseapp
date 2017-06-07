@@ -7,8 +7,8 @@ $("#submit").on("click", function(){
 });
 
 $(document).ready(function(){
-  var moviesReference = firebase.database().ref("strings");
-  moviesReference.on("child_added", function(data){
-    $("#strings").append("<li>" + data.val() + "</li>")
+  var stringStorage = firebase.database().ref("strings");
+  stringStorage.on("child_added", function(data){
+    $("#string_list").append("<li>" + data.val() + "</li>")
   });
 });
